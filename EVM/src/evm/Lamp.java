@@ -2,16 +2,22 @@ package evm;
 
 public abstract class Lamp {
 	
-	Integer State;
+	String lamp="off";
 
-	public Integer getState() {
-		return State;
-	}
-
-	public void setState(Integer state) {
-		State = state;
-	}
 	
+	
+	public String getLamp() {
+		return lamp;
+	}
+
+
+
+	public void setLamp(String lamp) {
+		this.lamp = lamp;
+	}
+
+
+
 	public abstract void lamp_glow();
 	
 	
