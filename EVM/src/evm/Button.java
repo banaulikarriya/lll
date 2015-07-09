@@ -2,7 +2,7 @@ package evm;
 
 public abstract class Button {
 
-	int state;
+	int state=0;
 
 	public int getState() {
 		return state;

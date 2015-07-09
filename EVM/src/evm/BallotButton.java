@@ -9,12 +9,12 @@ public class BallotButton extends Button {
 		if(state==0)
 		{
 			state=1;
-			System.out.println("button is press");
+			System.out.println(" Ballot button is press");
 		}
 		else
 		{
 			state=0;
-			System.out.println("button not press");
+			System.out.println(" Ballot button not press");
 		}
 		
 	}
