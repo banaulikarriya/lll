@@ -1,19 +1,27 @@
 package evm;
 
+import java.util.ArrayList;
+
 public class EVM {
 	
 	
 	BallotUnit ballot;
 	ControlUnit control;
 	int totalCandidate;
+	Candidate candidates;
 	
+	
+	
+
 	
 	EVM(int totalcandidate)
 	{
-		this.totalCandidate=totalcandidate;
+		
 		ballot =new BallotUnit(totalCandidate);
 		control =new ControlUnit();
+		
 	}
+	
 	void controlUnit(int request)
 		{
 			if(request==0)
@@ -24,16 +32,32 @@ public class EVM {
 				{
 					
 					control.ballotbutton.button_press();
-					ballot.candidatebuttn.button_press();
-					ballot.candidatelamp.lamp_glow();
+					if(ballot.candidatebuttn.state==0)
+					{
 					
+					ballot.candidatelamp.lamp_glow(); 
+					Candidate c1=new Candidate(1);
+					
+					Candidate c2=new Candidate(2);
+					Candidate c3=new Candidate(3);
+				 
+					 c1.voteforme();
+					 c2.voteforme();
+					 c3.voteforme();
+					 c2.voteforme();
+					
+					
+					
+					}
 				}
 				
 				
 			}
+			
+			
 		}
 	
-
+     
 	
 	
 }
