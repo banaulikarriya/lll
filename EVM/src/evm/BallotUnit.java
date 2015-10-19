@@ -9,6 +9,7 @@ public class BallotUnit {
 	Candidate candidate;
 	TotalButton TotalButton;
 	int totalCandidate;
+	int candidateid;
 	
 	
 	BallotUnit(int totalCandidate)
@@ -17,10 +18,9 @@ public class BallotUnit {
 		candidatebutton =new CandidateButton();
 		candidatelamp =new CandidateLamp();
 		candidatebuttn =new  CandidateButton();
-		candidate =new Candidate();
+		candidate =new Candidate(candidateid);
 		TotalButton=new TotalButton();
 	}
-	
 	
 	
 	
